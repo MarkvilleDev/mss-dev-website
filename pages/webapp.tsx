@@ -11,7 +11,7 @@ import {
 
 const WebApp: NextPage = () => {
   return (
-    <main className="relative w-screen flex flex-col items-center justify-start md:px-32 py-10">
+    <main className="relative w-screen flex flex-col items-center justify-start md:px-32 pt-10 pb-32">
       <div className="bg-[url('/assets/img/webapp.png')] -z-10 fixed w-screen h-screen bg-cover top-0 left-0 brightness-[20%] blur-sm" />
       <header className="flex flex-col items-center w-full py-12">
         <h1 className="lg:text-5xl text-center font-bold mb-5">
@@ -39,12 +39,12 @@ const WebApp: NextPage = () => {
         </div>
       </header>
       <section className="flex-col w-full lg:px-10">
-        <p className="text-center text-lg my-5 font-medium">
+        <p className="text-center text-xl my-5 font-medium">
           Here at Markville{"'"}s Web/App Development Club, we provide students
           with a unique opportunity to apply their programming skills and work
           together to create a real-world project.
         </p>
-        <div className="flex flex-col-reverse lg:flex-row">
+        <div className="flex flex-col-reverse lg:flex-row my-10">
           <div className="lg:w-3/5 lg:px-5">
             <p className="my-5 text-base text-slate-50">
               Our priority is to make web/app development accessible to all
@@ -71,7 +71,7 @@ const WebApp: NextPage = () => {
       <section className="w-full lg:px-32 px-5 py-10">
         <div className="w-full bg-slate-200/30 ring-1 ring-slate-50/60 rounded-lg p-5 flex flex-col justify-center items-center">
           <h3 className="text-slate-50 font-bold text-xl mb-3">
-            Students will learn:
+            Students learn:
           </h3>
           <ul className="grid lg:grid-cols-8 md:grid-cols-4 grid-cols-2 w-full">
             <li className="h-16 relative m-3">
@@ -143,7 +143,7 @@ const WebApp: NextPage = () => {
         </div>
       </section>
       <section className="w-full my-10 flex flex-col items-center justify-start">
-        <h3 className="text-slate-50 font-bold text-3xl mb-5">
+        <h3 className="text-slate-50 font-bold text-3xl my-10">
           Projects we{"'"}ve worked on
         </h3>
         <ul className="w-full grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -157,14 +157,24 @@ const WebApp: NextPage = () => {
                 cartoonish art style, multiple levels, sound effects and many
                 other mechanics!
               </p>
-              <a
-                href="https://apps.apple.com/ca/app/bo-nk/id1570376501"
-                target="_blank"
-                rel="noreferrer noopener"
-                className="mt-2"
-              >
-                <FaApple className="text-3xl mx-2" />
-              </a>
+              <div className="flex flex-row">
+                <a
+                  href="https://apps.apple.com/ca/app/bo-nk/id1570376501"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="mt-2"
+                >
+                  <FaApple className="text-3xl mx-2" />
+                </a>
+                <a
+                  href="https://markvilledev.github.io/boinksite/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="mt-2"
+                >
+                  <FaGlobe className="text-3xl mx-2" />
+                </a>
+              </div>
             </div>
           </li>
           <li className="bg-[url('/assets/webapp/Wolfpackapp.png')] rounded-lg bg-cover bg-center">
@@ -198,22 +208,32 @@ const WebApp: NextPage = () => {
                 tools to see course mark breakdowns & trends, book guidance
                 appointments, and search up teacher info.
               </p>
-              <a
-                href="https://apps.apple.com/ca/app/teachassist/id1614344413"
-                target="_blank"
-                rel="noreferrer noopener"
-                className="mt-2"
-              >
-                <FaApple className="text-3xl mx-2" />
-              </a>
-              <a
-                href="https://play.google.com/store/apps/details?id=io.github.teachassistapp"
-                target="_blank"
-                rel="noreferrer noopener"
-                className="mt-2"
-              >
-                <FaAndroid className="text-3xl mx-2" />
-              </a>
+              <div className="flex flex-row">
+                <a
+                  href="https://apps.apple.com/ca/app/teachassist/id1614344413"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="mt-2"
+                >
+                  <FaApple className="text-3xl mx-2" />
+                </a>
+                <a
+                  href="https://play.google.com/store/apps/details?id=io.github.teachassistapp"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="mt-2"
+                >
+                  <FaAndroid className="text-3xl mx-2" />
+                </a>
+                <a
+                  href="https://teachassistapp.github.io"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="mt-2"
+                >
+                  <FaGlobe className="text-3xl mx-2" />
+                </a>
+              </div>
             </div>
           </li>
           <li className="bg-[url('/assets/webapp/WordlePlus.png')] rounded-lg bg-cover bg-center">
@@ -257,6 +277,45 @@ const WebApp: NextPage = () => {
           </li>
         </ul>
       </section>
+      <footer className="w-full flex flex-col items-center px-10">
+        <h3 className="font-bold text-3xl text-slate-50 my-10">
+          Executive Team
+        </h3>
+        <div className="w-full grid grid-cols-1 gap-4 lg:grid-cols-3">
+          <ul className="flex flex-col items-center">
+            <h4 className="font-bold text-xl text-slate-50 mb-2">
+              Junior Trainers
+            </h4>
+            <li>Hamse Arwo</li>
+            <li>Eddie Chen</li>
+            <li>Andy Lai</li>
+            <li>Matthew Liu</li>
+            <li>Fahad Ishaq</li>
+          </ul>
+          <ul className="flex flex-col items-center">
+            <h4 className="font-bold text-xl text-slate-50 mb-2">Presidents</h4>
+            <li>Ryan Zhu</li>
+            <li>Ishaan Dey</li>
+          </ul>
+          <ul className="flex flex-col items-center">
+            <h4 className="font-bold text-xl text-slate-50 mb-2">
+              Senior Trainers
+            </h4>
+            <li>Fahad Ishaq</li>
+            <li>Emily Lim</li>
+            <li>Adam Wang</li>
+          </ul>
+        </div>
+        <h4 className="font-bold text-2xl text-slate-50 my-5">
+          Past Executives
+        </h4>
+        <ul className="flex flex-col items-center">
+          <li>Dorian Chen</li>
+          <li>Kye Electriciteh</li>
+          <li>Jonathan Feng</li>
+          <li>Jacqueline Ho</li>
+        </ul>
+      </footer>
     </main>
   );
 };
